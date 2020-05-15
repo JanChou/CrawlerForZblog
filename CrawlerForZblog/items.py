@@ -12,3 +12,14 @@ class CrawlerforzblogItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+
+class ArticleItem(scrapy.item):
+    collection = table = 'news'
+    category = scrapy.Item()
+    website = scrapy.Item()
+    title = scrapy.Item()
+    guid = scrapy.Item()
+    news = scrapy.Item()
+    url = scrapy.Item()
+    plaintext = scrapy.Item()
